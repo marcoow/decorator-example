@@ -19,7 +19,7 @@ function timed(target, name, descriptor) {
   return descriptor;
 }
 
-export default Route.extend({
+export default class IndexRoute extends Route {
   @timed
   async model() {
     let delay = Math.random() * 1500;
@@ -30,4 +30,4 @@ export default Route.extend({
       }, delay);
     });
   }
-});
+}
