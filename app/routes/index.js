@@ -10,6 +10,7 @@ function timed(target, name, descriptor) {
 
       let endTime = performance.now();
       let duration = endTime - startTime;
+      // eslint-disable-next-line no-console
       console.log(`⏱ ${name}: ${duration}ms.`);
 
       return result;
